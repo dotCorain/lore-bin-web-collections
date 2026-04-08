@@ -1,9 +1,9 @@
 [workspace]
 members = [
     "lore-bin-web-collections-2026-04-07-1",
-    "lore-bin-web-collections-2026-04-07-2",
-    "lore-bin-web-collections-2026-04-07-3",
-    "lore-bin-web-collections-2026-04-07-4",
+    #"lore-bin-web-collections-2026-04-07-2",
+    #"lore-bin-web-collections-2026-04-07-3",
+    #"lore-bin-web-collections-2026-04-07-4",
     ]
 resolver = "3"
 
