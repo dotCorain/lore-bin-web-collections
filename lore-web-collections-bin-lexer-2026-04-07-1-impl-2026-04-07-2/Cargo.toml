@@ -1,6 +1,6 @@
 [package]
 name = "lore-web-collections-bin-lexer-2026-04-07-1-impl-2026-04-07-2"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2024"
 license = "MIT"
 description = "Lore Web Collections Bin"

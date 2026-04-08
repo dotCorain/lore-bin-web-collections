@@ -114,6 +114,7 @@ impl LoreConverter {
     }
 
     /// 获取文件相对于 src_root 的输出路径
+    #[allow(unused)]
     pub fn get_output_path(&self, src: &Path) -> PathBuf {
         if let Some(src_root) = &self.src_root {
             src.strip_prefix(src_root)
@@ -203,17 +204,12 @@ impl LoreConverter {
             if src_path.is_dir() {
                 // 递归处理子目录
                 let dir_name = src_path.file_name().unwrap();
-                let dst_path = dst_dir.join(dir_name);
+                let dst_path = dst_dir.join(dir_name);  // 只拼接目录名，不是完整路径
                 converter.convert_directory(&src_path, &dst_path)?;
             } else if converter.is_lore_file(&src_path) {
                 // 处理 .lore 文件
-                let output_path = converter.get_output_path(&src_path);
-                let dst_path = dst_dir.join(output_path);
-                
-                if let Some(parent) = dst_path.parent() {
-                    converter.ensure_dir(parent)?;
-                }
-                
+                let file_name = src_path.file_name().unwrap();
+                let dst_path = dst_dir.join(file_name);  // 只拼接文件名
                 converter.process_lore_file(&src_path, &dst_path)?;
             }
         }
