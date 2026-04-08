@@ -1,6 +1,6 @@
 [workspace]
 members = [
-    "lore-bin-web-collections-2026-04-07-1",
+    "lore-web-collections-bin-lexer-2026-04-07-1-impl-2026-04-07-2",
     #"lore-bin-web-collections-2026-04-07-2",
     #"lore-bin-web-collections-2026-04-07-3",
     #"lore-bin-web-collections-2026-04-07-4",
