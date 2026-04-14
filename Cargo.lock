@@ -44,7 +44,7 @@ dependencies = [
 
 [[package]]
 name = "lore-web-collections-bin-lexer-2026-04-07-1-impl-2026-04-07-2"
-version = "0.0.5"
+version = "0.0.6"
 dependencies = [
  "lore-impl-web-collections-2026-04-07-2",
  "lore-lexer-web-collections-2026-04-07-1",

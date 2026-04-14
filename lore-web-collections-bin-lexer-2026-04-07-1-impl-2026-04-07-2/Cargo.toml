@@ -1,6 +1,6 @@
 [package]
 name = "lore-web-collections-bin-lexer-2026-04-07-1-impl-2026-04-07-2"
-version = "0.0.5"
+version = "0.0.6"
 edition = "2024"
 license = "MIT"
 description = "Lore Web Collections Bin"
@@ -9,7 +9,7 @@ repository = "https://github.com/dotCorain/lore-web-collections"
 readme = "README.md"
 
 [features]
-math = []  # 只是一个标记，表示这个 feature 存在
+math = ["lore-impl-web-collections-2026-04-07-2/math"]
 default = []
 
 [dependencies]
